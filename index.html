@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="Description" content="FeelGoodDrinks">
+	<title>Feel Good Drinks</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Kanit" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<!-- SECTION - TOP NAV MENU / HAMBURGER MENU	-->
+<section>
+
+	<!-- nav menu button toggle		-->
+		<a href="javascript:void(0);" class="icon" onclick="navtoggle()"><i class="fa fa-bars"></i></a>
+
+		<div class="navigation">
+
+			<!-- nav menu -->
+			<div id="links">
+				<div class="menu-top"><h4>Feel Good Menu</h4></div>
+				<ul>
+					<li><a href="#home" class="menu-sub">Discover your</a></li>
+					<li><a href="#home" class="menu-tag">&nbsp; &nbsp;Mind | Body | Home&nbsp; &nbsp;</a></li>
+				</ul>
+					<div class="navhome" a href="#home" "javascript:void(0);" onmouseover="hometoggle()"><h2>Home</h2></div>
+						<div id="homelinks">
+							<div class="navcare" a href="#carekit"><h2>Our care kit for you</h2></a></div>
+							<div class="navbuild" a href="#buildcarekit"><h2>Build your care kit</h2></a></div>
+							<div class="navbuy" a href="#buycarekit"><h2>Buy your care kit</h2></a></div>
+						</div>
+					<div class="navprod" a href="#products"><h2>Our Products</h2></a></div>
+					<div class="navhist" a href="#history"><h2>Our History</h2></a></div>
+					<div class="navwhy" a href="#why"><h2>Why We Feel Good</h2></a></div>
+					<div class="navcont" a href="#contact"><h2>Contact Us</h2></a></div>
+			</div>
+
+		</div>
+</section>
+
+<!-- SECTION - HEADER & LOGO & TAGLINE	-->
+
+<section>
+			<div class="header">
+				<div class="header-top"><h1>We want you</h1></div>
+				<div class="header-mid"><h1>to Feel Good</h1></div>
+				<div class="header-endl"><h1>Inside your</h1></div>
+				<div class="header-endr"><h1>&nbsp; &nbsp;Mind | Body | Home&nbsp; &nbsp;</h1></div>
+			</div>
+
+			<img class="logo" src="images/fglogo.png" alt"Feel Good Logo" id="fglogo"></img>
+			<img class="kitopen" src="images/kitopen.jpg" alt="Home Care Kit Open Box"></img>
+</section>
+
+<!-- SECTION - CARE KIT	INTRO-->
+
+<section>
+	<div class="care-intro">
+		<img class="down-arrow" src="images/downarrow.png" a href="#whats-inside"></img>
+		<div class="intro-copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+		<img class="kitopen-full" src="images/kitopenfull.jpg" alt="Home Care Kit Open Box"></img>
+	</div>
+</section>
+
+<!-- SECTION - CARE KIT	CONTENTS-->
+
+<section>
+	<div class="care-cont">
+		<div class="whats-inside"><h1>What's Inside our Care Kit that will help you?</h1></div>
+		<div class="care-num" src="images/123.png"></div>
+		<div class="care-copy">Lorem ipsum dolor sit amet, consectetur <br> elit, sed do eiusmod tempor incididunt ut<br> labore et dolore magna aliqua.</div>
+		<div class="care-num" src="images/123.png"></div>
+		<div class="care-copy">Lorem ipsum dolor sit amet, consectetur <br> elit, sed do eiusmod tempor incididunt ut<br> labore et dolore magna aliqua.</div>
+		<img class="up-arrow" src="images/uparrow.png" a href="#header"></img>
+	</div>
+</section>
+
+<!-- SECTION - FOOTER / CONTACT FORM	-->
+<section>
+
+		<div class="footer">
+
+			<div class="footer-grid">
+					<div class="footer-header-left">Feel Good and</div>
+					<div class="footer-header-right">Join our list today</div>
+					<div class="footer-firstname">First name
+						<input type="text" id="firstname" placeholder="first name">
+					</div>
+					<div class="footer-lastname">Last name
+						<input type="text" id="lastname" placeholder="last name">
+					</div>
+					<div class="footer-email">Email address
+						<input type="text" id="email" placeholder="email address">
+					</div>
+					<button class="footer-button">Join +</button>
+			</div>
+
+			<div class="footer-smalltext">Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit <br><br><hr><br><br>
+				This website has been created as part of an assignment in an approved course of study for Curtin University and contains copyright material not created by the author. All copyright material used remains copyright of the respective owners and has been used here pursuant to Section 40 of the Copyright Act 1968 (Commonwealth of Australia). No part of this work may be reproduced without consent of the original copyright owners. See code comments for references.
+			</div>
+
+		</div>
+
+</section>
+
+<script>
+/* Toggle nav links - show/hide */
+function navtoggle() {
+	var x = document.getElementById("links");
+	if (x.style.display === "block") {
+		x.style.display = "none";
+	} else {
+		x.style.display = "block";
+	}
+}
+
+/* Toggle nav links under home - show/hide */
+function hometoggle() {
+	var x = document.getElementById("homelinks");
+	if (x.style.display === "block") {
+		x.style.display = "none";
+	} else {
+		x.style.display = "block";
+	}
+}
+</script>
+
+</body>
+
+</html>
